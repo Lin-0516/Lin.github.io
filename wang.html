@@ -64,7 +64,9 @@ margin-top:30px;
 
 <body>
 
-<audio id="bgmusic" autoplay loop src="http://music.163.com/song/media/outer/url?id=26608787.mp3"></audio>
+<audio autoplay="autopaly" loop="loop" id="audios">
+    <source src="http://music.163.com/song/media/outer/url?id=26608787.mp3" type="audio/mp3" />
+</audio>
 
 <h1 id="h1"></h1>
 
@@ -72,15 +74,15 @@ margin-top:30px;
 
 <script>
 
-document.addEventListener('WeixinJSBridgeReady', function() {
-    document.getElementById('bgmusic').play()
-});
-
 var canvas = document.querySelector("canvas"),
 
   ctx = canvas.getContext("2d");
 
 var ww,wh;
+
+document.addEventListener('WeixinJSBridgeReady', function() {
+    document.getElementById('bgmusic').play()
+});
 
 function onResize(){
 
