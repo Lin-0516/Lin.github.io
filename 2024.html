@@ -65,7 +65,7 @@ margin-top:30px;
 <body>
 
 <audio autoplay="autopaly" loop="loop" id="audios">
-    <source src="http://music.163.com/song/media/outer/url?id=26608787.mp3" type="audio/mp3" />
+    <source src="music/1.mp3" type="audio/mp3" />
 </audio>
 
 <h1 id="h1"></h1>
@@ -81,7 +81,7 @@ var canvas = document.querySelector("canvas"),
 var ww,wh;
 
 document.addEventListener('WeixinJSBridgeReady', function() {
-    document.getElementById('bgmusic').play()
+    document.getElementById('audios').play()
 });
 
 function onResize(){
@@ -242,7 +242,7 @@ requestAnimationFrame(render);
 
 window.onload=function starttime(){
 
-        time(h1,'2023,01,21');    // 2023年元旦时间
+        time(h1,'2024,02,09');    // 2023年元旦时间
 
         ptimer = setTimeout(starttime,1000); // 添加计时器
 
@@ -266,7 +266,7 @@ window.onload=function starttime(){
 
         var second = parseInt(time%60);  // 以60秒为一整份 取余 剩下秒数
 
-        obj.innerHTML="<br>距2022年除夕夜还有：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"<br><span>小林愿你<br>旧岁千般皆如意<br>新年万事定称心<br>愿新年无恙<br>家事安如旧，亲友康如常</span>"
+        obj.innerHTML="<br>距2023年除夕夜还有：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"<br><span>小林愿你<br>旧岁千般皆如意<br>新年万事定称心<br>愿新年无恙<br>家事安如旧，亲友康如常</span>"
 
         return true;
 
