@@ -1,0 +1,1 @@
+echarts.registerTheme('theme',  null)
